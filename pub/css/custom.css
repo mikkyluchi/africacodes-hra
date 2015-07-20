@@ -1,0 +1,288 @@
+.theme-config {
+  position: fixed;
+  position: fixed;
+  top: 175px;
+  left: 0px;
+  overflow: hidden;
+}
+.theme-config-box {
+  margin-right: -220px;
+  position: relative;
+  z-index: 2000;
+  transition-duration: 0.8s;
+}
+.theme-config-box.show {
+  margin-right: 0px;
+}
+
+.spin-icon {
+  background: #1ab394;
+  position: absolute;
+  padding: 7px 10px 7px 13px;
+  border-radius: 20px 0px 0px 20px;
+  font-size: 16px;
+  top: 0;
+  left: 0px;
+  width: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+.skin-setttings {
+  width: 170px;
+  margin-left: 0px;
+  background: #f3f3f4;
+}
+
+.skin-setttings .title {
+  background: #efefef;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+.setings-item {
+  padding: 10px 30px;
+}
+.setings-item.skin {
+  text-align: center;
+}
+.setings-item .switch {
+  float: right;
+}
+.skin-name a {
+  text-transform: uppercase;
+}
+.setings-item a {
+  color: #fff;
+}
+.default-skin,
+.blue-skin,
+.ultra-skin,
+.yellow-skin {
+  text-align: center;
+}
+.default-skin {
+  font-weight: 600;
+  background: #1ab394;
+}
+.default-skin:hover {
+  background: #199d82;
+}
+.blue-skin {
+  font-weight: 600;
+  background: url("patterns/header-profile-skin-1.png") repeat scroll 0 0;
+}
+.blue-skin:hover {
+  background: #0d8ddb;
+}
+.yellow-skin {
+  font-weight: 600;
+  background: url("patterns/header-profile-skin-3.png") repeat scroll 0 100%;
+}
+.yellow-skin:hover {
+  background: #ce8735;
+}
+.ultra-skin {
+  font-weight: 600;
+  background: url("patterns/header-profile-skin-2.png") repeat scroll 0 0;
+}
+.ultra-skin:hover {
+  background: #1a2d40;
+}
+.wrapper {
+	padding:0px;
+}
+.row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+/*One page styles*/
+.one-page {
+	height:1000px;	
+	color:#fff;
+}
+.bg-black {
+	background:#000;
+	color:#fff;
+}
+.bg-grey {
+	background:#555555;
+}
+.one-page-container {
+	width:960px;
+	margin:0px auto;
+	
+}
+.b-crumbs {
+	padding-top:63px;
+}
+.one-page-view {
+	width: 745px;
+  	margin: 93px auto;
+}
+.mtop-55 {
+	margin-top:36px;
+}
+.text-black {
+	color:#000;
+}
+.panel {
+	margin-bottom:10px;
+}
+.summary-actions {
+	height: 81.5px;
+}
+.profile-nav ul > li {
+  border-bottom: 1px solid #ebeae6;
+  margin-top: 0;
+  line-height: 31px;
+}
+.no-bg {
+	background:none;
+}
+a.no-hover:hover {
+	border-left: 0px;
+	background: #41cac0 !important;
+	border-left: 0px;
+	color: #000 !important;	
+}
+.r-activity-bio {
+  margin: 10px 0 0;
+  font-size: 12px;
+}
+ul#link-fly-links {
+  padding: 5px;
+}
+ul#link-fly-links li {
+  float: left;
+}
+ul#link-fly-links li a {
+  text-align: center;
+  width: 74px;
+  height: 52px;
+  padding: 0px;
+  padding-top: 10px;
+}
+ul#link-fly-links li a i {
+  display: block;
+}
+.down-below {
+	position:absolute;
+	bottom:0px;
+}
+.absense-actions {
+	height: 37.5px;
+}
+.absense-actions-l {
+	  height: 96px;
+}
+.absense-actions-xl {
+	height: 300px;
+}
+.timeline-desk .album {
+  margin-top: 0px;
+}
+.timeline-desk .album img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.padding-five {
+	padding:5px;
+}
+.height-determiner {
+	height:394px;
+}
+.nbr-0 {
+	border-radius:0px;
+}
+.performance-actions {
+	height:112px;
+}
+.padding-none {
+	padding:0px !important;
+}
+.padding {
+	padding:10px;
+}
+.npt-0 {
+	padding-top:0px;
+}
+.performance-actions-l {
+	height:47px;
+}
+.dir-btn {
+	font-size:23px;
+	text-align:center;
+}
+.sum-act-l {
+	padding:5px 10px;
+	height:63px;
+}
+.r-activity {
+  margin: -3px 0 0;
+  font-size: 12px;
+}
+.biodi li a{
+	padding:0px;
+	
+}
+.bg-light-grey {
+	background:#F7F7F7;
+}
+.o-auto {
+  overflow: auto;
+  border-left:0px;
+}
+.biodata-d {
+	margin:17.1px 0px 16.5px 10px;
+	font-size:14px;
+}
+.biodata-actions {
+	height:27.2px;
+}
+.biodata-overview .terques {
+  background: #58C9F3;
+}
+.biodata-overview .symbol {
+  width: 40%;
+  padding: 7.5px 7px;
+  -webkit-border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0px 0px 4px;
+}
+.biodata-overview .symbol, .biodata-overview .value {
+  display: inline-block;
+  text-align: center;
+}
+.biodata-overview .symbol i {
+  color: #fff;
+  font-size: 33px;
+}
+.biodata-overview .value {
+  width: 58%;
+  padding-top: 0px;
+}
+.biodata-overview .value {
+  float: right;
+}
+.biodata-overview .symbol, .biodata-overview .value {
+  display: inline-block;
+  text-align: center;
+}
+.biodata-overview .value h1 {
+	font-size:28px;
+  font-weight: 300;
+}
+.biodata-overview .value h1, .biodata-overview .value p {
+  margin: 0;
+  padding: 10px;
+  color: #c6cad6;
+}

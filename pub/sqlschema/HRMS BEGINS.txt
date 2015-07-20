@@ -1,0 +1,57 @@
+CREATE TABLE STAFF
+(
+  STAFF_ID                   NUMBER,
+  FIRST_NAME                 VARCHAR2(50 BYTE),
+  LAST_NAME                  VARCHAR2(50 BYTE),
+  HIRE_DATE                  DATE,
+  GRADE                      NUMBER,
+  PRIM_ADDRESS1              VARCHAR2(255 BYTE),
+  STATE_ID                   NUMBER,
+  PHONE                      VARCHAR2(20 BYTE),
+  EMAIL                      VARCHAR2(300 BYTE),
+  DISPLAY_NAME               VARCHAR2(127 BYTE),
+  STAFF_NUMBER               VARCHAR2(20 BYTE),
+  IS_ACTIVE                  NUMBER(1),
+  CREATED_ON		     DATE,
+  CREATED_BY		     NUMBER,
+  UPDATED_BY                 NUMBER,
+  DATE_UPDATED               DATE,
+  PWD                        VARCHAR2(50 BYTE),
+  COMPANY_ID		     NUMBER
+)
+
+CREATE TABLE H_ATTRIBUTE
+(
+  ATTRIBUTE_ID            NUMBER,
+  ATTRIBUTE_NAME          VARCHAR2(100 BYTE),
+  ATTRIBUTE_FORM          NUMBER(1),
+  DISPLAY_NUMBER          NUMBER(4),
+  IS_COMPLEX              NUMBER(1)             DEFAULT 0,
+  DISPLAY_NAME            VARCHAR2(100 BYTE),
+  ATTRIBUTE_GROUP_ID	  NUMBER,  
+  IS_DEFAULT		  NUMBER,
+  CREATED_ON		  DATE,
+  CREATED_BY		  NUMBER,
+  COMPANY_ID		  NUMBER
+  
+)
+
+
+CREATE TABLE H_ATTRIBUTE_GROUP
+(
+  ATTRIBUTE_GROUP_ID            	NUMBER,
+  GROUP_NAME          VARCHAR2(100 BYTE),
+  CREATED_ON		  DATE,
+  COMPANY_ID		  NUMBER
+  
+  )
+
+
+
+CREATE TABLE H_STAFF_ATTRIBUTE
+(
+  SA_ID                   NUMBER,
+  STAFF_ID                NUMBER,
+  ATTRIBUTE_ID            NUMBER,
+  STRING_VALUE            VARCHAR2(4000 BYTE)
+  )

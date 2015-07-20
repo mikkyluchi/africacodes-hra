@@ -1,0 +1,20 @@
+/* CSS Document */
+.login-error {
+	margin-right:10px;
+	text-align:left;
+	padding:5px 2px;
+}
+#infoMessage p {
+	margin:0px;
+}
+#loginWrapper {
+	margin-top:0px;
+}
+.infoMessage .alert {
+	margin-bottom:0px;
+}
+.infoMessage .alert-error {
+	color: #FFFFFF;
+  	background-color: #8C8282;
+	text-shadow:none;
+}
