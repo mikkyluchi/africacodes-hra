@@ -19,6 +19,11 @@
     <!--right slidebar-->
     <link href="<?=base_url()?>pub/css/slidebars.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?=base_url()?>pub/js/chosen/chosen.css" type="text/css">
+    <!--Fancy Box-->
+    
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="<?=base_url()?>pub/assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    
     <!-- Custom styles for this template -->
     <link href="<?=base_url()?>pub/css/style.css" rel="stylesheet">
     <link href="<?=base_url()?>pub/css/style-responsive.css" rel="stylesheet" />
@@ -304,7 +309,6 @@
                     <span>
                         Collapse menu
                     </span>
-
                 <div class="switch">
                     <div class="onoffswitch">
                         <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="collapsemenu">
@@ -319,7 +323,6 @@
                     <span>
                         Fixed sidebar
                     </span>
-
                 <div class="switch">
                     <div class="onoffswitch">
                         <input type="checkbox" name="fixedsidebar" class="onoffswitch-checkbox" id="fixedsidebar">
@@ -334,7 +337,6 @@
                     <span>
                         Top navbar
                     </span>
-
                 <div class="switch">
                     <div class="onoffswitch">
                         <input type="checkbox" name="fixednavbar" class="onoffswitch-checkbox" id="fixednavbar">
@@ -349,7 +351,6 @@
                     <span>
                         Boxed layout
                     </span>
-
                 <div class="switch">
                     <div class="onoffswitch">
                         <input type="checkbox" name="boxedlayout" class="onoffswitch-checkbox" id="boxedlayout">
@@ -364,7 +365,6 @@
                     <span>
                         Fixed footer
                     </span>
-
                 <div class="switch">
                     <div class="onoffswitch">
                         <input type="checkbox" name="fixedfooter" class="onoffswitch-checkbox" id="fixedfooter">
@@ -386,7 +386,7 @@
             </div>
             <div class="setings-item blue-skin">
                     <span class="skin-name ">
-                        <a href="#biodata" class="s-skin-1">
+                        <a href="#biodata" id="pbvr" data-id="<?=$this->session->userdata('staff_id')?>" data-partial="<?=base_url()?>account/profile/profile_biodata_partial/?id=<?=$this->session->userdata('staff_id')?>" class="s-skin-1">
                             BIODATA
                         </a>
                     </span>
@@ -428,6 +428,9 @@
     <script type="text/javascript" src="<?=base_url()?>pub/assets/fuelux/js/spinner.min.js"></script>
 	<script type="text/javascript" src="<?=base_url()?>pub/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
     <script type="text/javascript" src="<?=base_url()?>pub/js/chosen/chosen.jquery.js"></script>
+    <!--Fancy Box-->
+    <script type="text/javascript" src="<?=base_url()?>pub/assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>pub/assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
     <!--common script for all pages-->
     <script src="<?=base_url()?>pub/js/core/smoothscroll.js"></script>
     <script src="<?=base_url()?>pub/js/common-scripts.js"></script>
@@ -438,6 +441,19 @@
         $(function(){
               $('select.chosen-select').chosen({width:"100%"});
           });
+		  $(document).ready(function() {
+			$(".various").fancybox({
+				maxWidth	: 900,
+				maxHeight	: 700,
+				fitToView	: false,
+				width		: '70%',
+				height		: '70%',
+				autoSize	: false,
+				closeClick	: false,
+				openEffect	: 'none',
+				closeEffect	: 'none'
+			});
+		});
     </script>
   </body>
 

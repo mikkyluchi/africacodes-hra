@@ -52,6 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = 'errors/page_missing';
 $route['translate_uri_dashes'] = FALSE;
-$route['login'] = 'auth/login';
+$route['login'] = 'account/login';
 $route["forgot_password"] = 'auth/forgot_password';
 $route["logout"] = 'auth/logout';
+$route["staff/:any"] = 'account/profile';

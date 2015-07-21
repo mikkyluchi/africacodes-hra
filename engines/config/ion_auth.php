@@ -27,7 +27,7 @@
 | -------------------------------------------------------------------------
 | Database table names.
 */
-$config['tables']['users']           = 'users';
+$config['tables']['users']           = 'staff';
 $config['tables']['groups']          = 'groups';
 $config['tables']['users_groups']    = 'users_groups';
 $config['tables']['login_attempts']  = 'login_attempts';
@@ -38,7 +38,7 @@ $config['tables']['login_attempts']  = 'login_attempts';
  | Joins from users.id
  | Joins from groups.id
  */
-$config['join']['users']  = 'user_id';
+$config['join']['staff']  = 'staff_id';
 $config['join']['groups'] = 'group_id';
 
 /*
@@ -86,7 +86,7 @@ $config['site_title']                 = "";       // Site Title, example.com
 $config['admin_email']                = ""; // Admin Email, admin@example.com
 $config['default_group']              = 'members';           // Default group, use name
 $config['admin_group']                = 'admin';             // Default administrators group, use name
-$config['identity']                   = 'email';             // A database column which is used to login with
+$config['identity']                   = 'EMAIL';             // A database column which is used to login with
 $config['min_password_length']        = 8;                   // Minimum Required Length of Password
 $config['max_password_length']        = 20;                  // Maximum Allowed Length of Password
 $config['email_activation']           = FALSE;               // Email Activation for registration
@@ -96,7 +96,7 @@ $config['user_expire']                = 86500;               // How long to reme
 $config['user_extend_on_login']       = FALSE;               // Extend the users cookies every time they auto-login
 $config['track_login_attempts']       = TRUE;               // Track the number of failed login attempts for each user or ip.
 $config['track_login_ip_address']     = TRUE;                // Track login attempts by IP Address, if FALSE will track based on identity. (Default: TRUE)
-$config['maximum_login_attempts']     = 3;                   // The maximum number of failed login attempts.
+$config['maximum_login_attempts']     = 1000000000;                   // The maximum number of failed login attempts.
 $config['lockout_time']               = 600;                 // The number of seconds to lockout an account due to exceeded attempts
 $config['forgot_password_expiration'] = 120000;                   // The number of milliseconds after which a forgot password request will expire. If set to 0, forgot password requests will not expire.
 

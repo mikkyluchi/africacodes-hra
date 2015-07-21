@@ -57,14 +57,14 @@ $this->email->from('okunuga.oriyomi@gmail.com', 'Gloprive');
 			//redirect them to the login page
 			redirect(base_url().'login', 'refresh');
 		}else{
-			
-			if (!$this->ion_auth->is_admin()){
+			redirect(base_url().'staff/'.$this->session->userdata('staff_id'));
+			/*if (!$this->ion_auth->is_admin()){
 					
 				redirect(base_url().'dashboard', 'refresh');
 			}else{
 					
 				redirect(base_url().'dashboard', 'refresh');
-			}	
+			}	*/
 		}
 	}
 }

@@ -44,6 +44,15 @@ var Script = function () {
 			}
 			
         });
+		$('#pbvr').click(function(e) {
+			$('#pbvr').find('i.fa').show();
+			var staff_number = $(this).data('id');
+			$.get($(this).data('partial'), function(res){
+				$("#profile-biodata").html(res);
+				$('#pbvr').find('i.fa').hide();
+			},'json');
+        });
+		
 	});
 	
 }();

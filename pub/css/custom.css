@@ -286,3 +286,9 @@ ul#link-fly-links li a i {
   padding: 10px;
   color: #c6cad6;
 }
+.profile-nav ul > li:last-child > a:last-child : hover {
+    background-color: #41cac0;
+	  border-color: #41cac0;
+	  color: #FFFFFF;
+	  border-radius:0px;
+}

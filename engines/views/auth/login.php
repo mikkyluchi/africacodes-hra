@@ -36,11 +36,11 @@
             <input type="text" id="identity" name="identity" class="form-control" placeholder="User ID" autofocus>
             <input type="password" id="password" name="password" class="form-control" placeholder="Password">
             <label class="checkbox">
-                <input type="checkbox" id="remember" name="remember" value=""> Remember me
-                <span class="pull-right">
+                <input type="checkbox" id="remember" name="remember" value="1"> Remember me
+                <!--<span class="pull-right">
                     <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
 
-                </span>
+                </span>-->
             </label>
             <button class="btn btn-lg btn-login btn-block" type="submit">Sign in</button>
             <!--<p>or you can sign in via social network</p>
@@ -64,7 +64,7 @@
         </div>
 
           <!-- Modal -->
-          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+          <!--<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
               <div class="modal-dialog">
                   <div class="modal-content">
                       <div class="modal-header">
@@ -82,7 +82,7 @@
                       </div>
                   </div>
               </div>
-          </div>
+          </div>-->
           <!-- modal -->
 
       </form>
